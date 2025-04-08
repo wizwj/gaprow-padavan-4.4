@@ -108,5 +108,5 @@ jobs:
       uses: actions/upload-artifact@v4
       if: always()
       with:
-        name: Padavan-MI-R4A-jinenge
+        name: Padavan-MI-R4A
         path: /opt/images
