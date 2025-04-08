@@ -38,7 +38,7 @@ jobs:
         pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget
     - name: Clone source code
       run: |
-        git clone --depth=1 https://github.com/jinenge/padavan-4.4.git /opt/rt-n56u
+        git clone --depth=1 https://github.com/gaprow/padavan-4.4.git /opt/rt-n56u
         cd /opt/rt-n56u/toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
@@ -105,7 +105,7 @@ jobs:
         sudo ./build_firmware_modify $TNAME 0
         sudo mv -f images/*.bin /opt/images/
     - name : Upload packages
-      uses: actions/upload-artifact@master
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: Padavan-MI-R4A-jinenge
