@@ -11,6 +11,7 @@
 #undef  BOARD_GPIO_LED_ALL
 #undef  BOARD_GPIO_LED_WIFI
 #define BOARD_GPIO_LED_POWER    8
+#define BOARD_GPIO_LED_POWER_ON   0   // 0=低电平亮，1=高电平亮，默认是高电平点亮！
 #undef  BOARD_GPIO_LED_LAN
 #define BOARD_GPIO_LED_WAN	6
 #undef  BOARD_GPIO_LED_ROUTER	
